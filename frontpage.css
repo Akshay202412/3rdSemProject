@@ -1,0 +1,468 @@
+body{
+    font-family:Agbalumo;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.792);
+    
+}
+.nav-bar-container{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background-color: #051622;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family:Agbalumo;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.792);
+}
+
+.nav-bar-container span h1 svg{
+    filter:drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.736));
+}
+
+.nav-bar-container span h1{
+    color: #1BA098;
+}
+
+.menu-item , .menu-item-package{
+    display: inline;
+    padding-right: 4%;
+}
+
+.menu-item-link{
+    text-decoration: none;
+    color:#1BA098;
+    font-size: 18px;
+    
+}
+
+.menu-item-link:hover{
+    color:white;
+}
+
+.nav-menu{
+    padding-top: 10px;
+}
+
+.img-container{
+    background-image: url("image/istockphoto-1413299539-2048x2048.jpg");
+    width: 100%;
+    height: 90vh;
+    margin-top: 0%;
+    padding: 0%;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    
+    
+} 
+
+/* .img-container img{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+} */
+
+.img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #1BA098;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: changeAnimation 3s infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.792);
+    font-family: Open Sans;
+}
+
+#img-tx-brand{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.792);
+    font-family: Open Sans;
+}
+
+#book-now{
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color:#051622;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.792);
+    font-family: Open Sans;
+}
+
+
+.img-text:after{
+    content: "";
+    animation: changeAnimation 2s infinite;
+}
+
+button,#book-now{
+    border-radius: 5%;
+    border: none;
+}
+
+.menu-item-link-button:hover,#book-now:hover{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: #1BA098;
+}
+
+#book-now:hover{
+    background-color:#051622 ;
+}
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom: #1BA098;
+  }
+  
+ 
+  .menu-item-package:hover .dropdown-content {
+    display: block;
+    background-color:white;
+    text-align: center;
+    
+}
+  
+.dropdown-content a{
+    display: block;
+    text-decoration: none;
+    padding-top: 9px;
+    color:black;
+    
+}
+
+.dropdown-content a:hover{
+    background-color:#1BA098;
+    color:white;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    color:#1BA098;
+  }
+
+.dropdown:hover{
+    color: white;
+}
+
+@keyframes changeAnimation {
+    0% {
+        content: "Visit INDIA";
+    }
+    25% {
+        content: "Visit Austrialia";
+    }
+    50% {
+        content: "Visit New Zeland";
+    }
+    75% {
+        content: "Visit America";
+    }
+    100% {
+        content: "Visit Netherland";
+    }
+}
+
+#section3,#AboutUS{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-color: #051622;
+    color:#1BA098;
+}
+
+#section3Form,#AboutUsSection{
+    display: inline;
+
+}
+
+.section3Fields{
+    margin-top: 25px;
+    width: 50%;
+    margin-left : 20%
+
+}
+
+#section3 img{
+    width:100%
+}
+
+
+#section3 button{
+    border-radius: 5%;
+    border: none;
+}
+
+
+#section3 button:hover{
+    background-color:#1BA098;
+    color: white;
+}
+
+
+.packagerow1{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+    margin-top: 5%;
+}
+
+.packagecol{
+    display:inline;
+    margin-left: 38px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #051622;
+    color:white;
+    height:100%;
+    border-radius: 4%;
+    border: 5px;
+    border-style: groove;
+    border-color: #1BA098;
+}
+
+
+.packagecol img{
+    width:100%;
+    height:38%;
+    border-radius: 4%;
+}
+
+.packagecol label{
+    margin-top: 15px;
+}
+
+.packagecol button{
+    margin-top: 28px;
+}
+
+.packagecol button:hover{
+    background-color:#1BA098 ;
+    color: white;
+    
+}
+
+/* .packagecol:hover{
+    border: 5px;
+    border-style: groove;
+    border-color: #1BA098;
+    
+} */
+
+#ServicesSection{
+    padding-top: 120px;
+}
+
+#ServicesSection a{
+    display: block;
+    text-decoration: none;
+    color:#051622;
+}
+
+#ServicesSection h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#ServicesSection a:hover{
+    color: #1BA098;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+#packagePlace{
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+
+
+#ServicesSection a{
+  margin-top: 10px;
+  text-align: center;
+   border-style: ridge;
+   background-color: white;
+   color:#051622;
+   font-size: 22px;
+   border-style: groove;
+
+}
+
+#ServicesSection a svg {
+    height: 30px;
+}
+
+#ServicesSection a:hover{
+    color:white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #051622;
+    
+}
+
+h2{
+    margin-top: 18px;
+}
+
+h3{
+    margin-bottom: 60px;
+}
+
+
+
+div.scroll-container {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 15px;
+    margin-right:35px;
+    width:22%;
+    height: 20%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  }
+
+  div.scroll-container img:hover{
+    transform: scaleY(1.2);
+    transform: scaleY(1.2);
+    
+  }
+
+  #Gallery h3{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 80px;
+  }
+
+    #AboutUS{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-color: #051622;
+    color:#1BA098;
+    margin-top: 15px;
+}
+
+#AboutUsSection{
+    padding-left: 12px;
+}
+
+#AboutUS img{
+    width:100%;
+    height: 100%;
+}
+
+.AboutUsPHeading{
+    text-align: center;
+    color:white;
+    text-decoration: underline;
+}
+
+#AboutUsWrapper h3{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 80px;
+}
+
+#footer{
+    background-color: #051622;
+    margin-top: 12px;
+    text-align: center;
+    color:white;
+    margin-bottom: -14px;
+}
+
+#footer h1{
+    color:#1BA098;
+   
+}
+
+#footer a{
+    text-decoration: none;
+    padding-right: 30px;
+    color: #1BA098;
+}
+
+#footer a:hover{
+    color: white;
+    box-shadow: 0px 8px 16px 0px white;
+}
+
+#RegisterModalContainer ,#LoginModalContainer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #RegisterModalContainer  #ModalContent, #LoginModalContainer  #ModalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width:30%;
+    background-color: #051622;
+    color:#1BA098;
+  }
+  #closeModal,#LogincloseModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  #RegisterModalContainer label, #LoginModalContainer label{
+   display: block;
+   margin-bottom:20px;
+  }
+  #RegisterModalContainer label input,#RegisterModalContainer label select option,#LoginModalContainer label input{
+    margin-left: 3%;
+  }
+
+  #RegisterModalContainer button,#LoginModalContainer button{
+    position: relative;
+    display: block;
+    left:38%;
+    margin-top:25px;
+  }
+
+  #RegisterModalContainer a,#LoginModalContainer a{
+    color:#1BA098;
+  }
+
+  #RegisterModalContainer button:hover,#LoginModalContainer button:hover{
+    color:#1BA098;
+  }
