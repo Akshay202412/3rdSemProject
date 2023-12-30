@@ -119,23 +119,20 @@ function validateRegisterForm(event) {
 
 function validateLoginForm(event){
    
-    var name = document.getElementById("LoginName").value;
+    var email = document.getElementById("LoginEmail").value;
     var password = document.getElementById("LoginPass").value;
-   
-    if(!name || !password){
+    var valEmail="Akshay@gmail.com";
+    var valPass="Jain@Project";
+
+
+    if(!email || !password){
         return false;
     }
 
 
-    var nameRegex = /^[a-zA-Z]+$/;
-    if (!nameRegex.test(name)) {
-        alert("Name should only contain alphabets.");
-        event.preventDefault();
-        return false;
-    }
-
-    if(name.length<3){
-        alert("Name should be atleast of size 3");
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Invalid email format");
         event.preventDefault();
         return false;
     }
@@ -148,7 +145,15 @@ function validateLoginForm(event){
         return false;
     }
     
+    if(valEmail===email && valPass===password){
     alert("Login Successfull");
+    }
+    else{
+        alert("Email and password combination don't match");
+        event.preventDefault();
+        return false;
+    }
+
 
     return true;
     
